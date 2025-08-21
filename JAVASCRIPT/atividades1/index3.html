@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 2</title>
+</head>
+<body>
+
+<h1>Exercício 2: Placar de Futebol</h1>
+
+<!-- Entrada dos times e gols -->
+<label>Time 1:</label>
+<input type="text" id="time1">
+<label>Gols do Time 1:</label>
+<input type="number" id="gols1"><br><br>
+
+<label>Time 2:</label>
+<input type="text" id="time2">
+<label>Gols do Time 2:</label>
+<input type="number" id="gols2"><br><br>
+
+<!-- Botão para verificar vencedor -->
+<button onclick="verificar()">Verificar</button>
+
+<!-- Resultado -->
+<p id="resultado"></p>
+
+<script>
+  // Função que verifica quem venceu
+  function verificar() {
+    let t1 = document.getElementById('time1').value;
+    let g1 = parseInt(document.getElementById('gols1').value);
+    let t2 = document.getElementById('time2').value;
+    let g2 = parseInt(document.getElementById('gols2').value);
+
+    // Verifica se os valores foram preenchidos
+    if (!t1 || !t2 || isNaN(g1) || isNaN(g2)) {
+      alert("Preencha todos os campos corretamente!");
+      return;
+    }
+
+    let resultado = t1 + " " + g1 + " x " + g2 + " " + t2 + " - ";
+
+    if (g1 > g2) {
+      resultado += "Vencedor: " + t1;
+    } else if (g2 > g1) {
+      resultado += "Vencedor: " + t2;
+    } else {
+      resultado += "EMPATE";
+    }
+
+    document.getElementById('resultado').innerText = resultado;
+  }
+</script>
+
+</body>
+</html>
