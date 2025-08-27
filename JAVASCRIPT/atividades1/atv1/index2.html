@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Números maiores que 100</title>
+</head>
+<body>
+    <h1>10 primeiros números inteiros maiores que 100</h1>
+    <pre id="maiores100"></pre>
+
+    <script>
+        let resultado = "";
+        for (let i = 101; i <= 110; i++) {
+            resultado += i + "\n";
+        }
+        document.getElementById("maiores100").innerText = resultado;
+    </script>
+</body>
+</html>
