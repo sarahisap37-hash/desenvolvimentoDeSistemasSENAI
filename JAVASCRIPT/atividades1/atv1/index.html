@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuada do 8</title>
+</head>
+<body>
+    <h1>Tabuada do 8</h1>
+    <pre id="tabuada8"></pre>
+
+    <script>
+        let resultado = "";
+        for (let i = 1; i <= 10; i++) {
+            resultado += `8 x ${i} = ${8 * i}\n`;
+        }
+        document.getElementById("tabuada8").innerText = resultado;
+    </script>
+</body>
+</html>
