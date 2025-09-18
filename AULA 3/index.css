@@ -1,0 +1,48 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif';
+}
+
+
+body{
+    background-color:rgb(94, 36, 22)
+}
+.pai{
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(141, 77, 34);
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+}
+.caixa{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(141, 90, 66);
+    margin: 20px;
+}
+
+header h1{
+    font: size 20pt;
+}
+
+header{
+    width: 100%;
+    padding: 10px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    width: 50px;
+
+}
