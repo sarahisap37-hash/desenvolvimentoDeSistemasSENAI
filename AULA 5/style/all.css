@@ -1,0 +1,56 @@
+:root{
+    --textosHeader: rgb(14, 126, 70);
+    --corPrimaria: rgb(123, 167, 23);
+    --corSecundaria: rgb(76, 218, 100) ;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    background-color: var(--corSecundaria);
+    color:var(--textoHeader);
+    align-items: center;
+
+}
+
+header a{
+    text-decoration: none;
+    color:var(--textosHeader);
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.paginaAtual{
+    padding: 5px;
+    background-color: var(--corSecundaria);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center
+    padding 20px 0px;
+    background-color: var(--corPrimaria);
+    color: var(--textosHeader);
+    position: absolute;
+    bottom: 0%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
