@@ -1,0 +1,60 @@
+@font-face {
+    font-family: ParisForbel;
+    src: url(../Fonts/Paris\ Forbel\ TTF.ttf);
+}
+
+
+:root{
+    --background: white;
+    --fontePrimaria: ParisForbel; 
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    /* font-family: ; */
+}
+
+p{
+    font-family: "Limelight", sans-serif;
+}
+
+h1{
+    font-family: var(--fontePrimaria), 'Times New Roman, Arial'; 
+}
+
+@keyframes animacao{
+    0%{
+        background-color: black;
+    }
+    20%{
+        background-color:red;
+    }
+    40%{
+        background-color:aqua;
+        transform: rotate(300deg); 
+    }
+    60%{
+        background-color:green; 
+        border-radius: 100%;
+    }
+    80%{
+        background-color:chartreuse;
+        margin-left: 200px;
+    }
+    100%{
+        background-color:violet;
+    }
+
+h1{
+    font-family: var(--fontePrimaria),'Times New Roman, Arial';
+
+}
+}
+#caixa{
+    width: 300px;
+    height: 300px;
+    background-color:blue;
+    animation: animacao 3s infinite;
+}
+
