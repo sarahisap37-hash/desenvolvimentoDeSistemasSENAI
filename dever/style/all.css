@@ -1,0 +1,21 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: hsl(27, 33%, 44%);
+      text-align: center;
+    }
+    h1 {
+      background-color: #422204;
+      color: white;
+      padding: 10px;
+    }
+    .bolo {
+      background: white;
+      margin: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    img {
+      width: 250px;
+      border-radius: 8px;
+    }
