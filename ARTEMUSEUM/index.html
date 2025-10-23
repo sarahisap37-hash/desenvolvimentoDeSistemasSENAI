@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/all.css">
-    <link rel="stylesheet" href="style/imprecao.css" media="print">
-    <link rel="stylesheet" href="style/landscape.css" media="screen and (orientation:landscape)">
-    <link rel="stylesheet" href="style/portrait.css" media="screen and (orientation:portrait)">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtMuseum</title>
+  <link rel="stylesheet" href="style/all.css">
 </head>
 <body>
-    <main>
-        <nav>
-            <img src="images/menuIcon.svg" alt="" id="menuButton" onclick="mostrar()">
-            <ul id="menuOpcoes">
-                <li>Item do menu</li>
-                <li>Item do menu</li>
-                <li>Item do menu</li>
-                <li>Item do menu</li>
-                <li>Item do menu</li>
-                <li>Item do menu</li>
-            </ul>
-            
-        </nav>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iste rem repellat excepturi, aperiam debitis quisquam pariatur commodi voluptatum adipisci recusandae aut maxime odio vel, quae, sit placeat neque quaerat.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio alias odio ullam dicta vitae. Ut est repellendus quod deserunt reiciendis pariatur, similique at autem non itaque vitae eos inventore mollitia!</p>
-        <picture>
-            <source media="(max-width: 600px)" srcset="images/mulherdancandoMenor.jpg">
-            <img src="images/mulherdancando.jpg" width="100%" alt="">
-        </picture>  
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolor voluptas provident, doloribus doloremque accusantium vero, blanditiis magnam illo ipsum error. Nulla officiis obcaecati architecto, assumenda cumque rem quo illo!</p>
-    </main>
-    <script>
-        function mostrar(){
-            if (menuOpcoes.style.display == "block"){
-                menuOpcoes.style.display = "none"
-            } else {
-                menuOpcoes.style.display = "block"
-            }
-        }
-    </script>
+
+  <header>
+    <h1>ArtMuseum</h1>
+  </header>
+
+  <section class="destaque">
+    <h2>Destaque da semana</h2>
+    <div class="artista">
+      <img src="images/elizabeth.jpg" alt="Artista destaque">
+      <h3>Elizabeth</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum dolor 
+      laoreet, pharetra metus nec, porttitor ligula.</p>
+      <button>Ver artista</button>
+    </div>
+  </section>
+
+  <section class="artes">
+    <h2>Artes</h2>
+
+    <div class="arte-card">
+      <img src="images/arte3.jpg" alt="Arte 1">
+      <h3>Título da arte</h3>
+      <p>Descrição da arte</p>
+      <button>Ver arte</button>
+    </div>
+
+    <div class="arte-card">
+      <img src="images/arte2.jpg" alt="Arte 2">
+      <h3>Título da arte</h3>
+      <p>Descrição da arte</p>
+      <button>Ver arte</button>
+    </div>
+
+    <div class="arte-card">
+      <img src="images/arte1.jpg" alt="Arte 3">
+      <h3>Título da arte</h3>
+      <p>Descrição da arte</p>
+      <button>Ver arte</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>ArtMuseum © 2023</p>
+  </footer>
+
 </body>
 </html>
